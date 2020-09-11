@@ -34,6 +34,7 @@ body {
 }
 
 #intro {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -77,28 +78,6 @@ h3 {
   border-radius: 50%;
 }
 
-blockquote {
-  background: #E67253;
-  float: right;
-  width: 10em;
-  height: 10em;
-  border-radius: 50%;
-  display: flex;
-  margin: 0 5% 0 0;
-  padding: 1.5em 1.5em 1.5em 1.5em;
-  align-items: center;
-  justify-content: center;
-  font-size: small;
-  font-weight: bold;
-  box-shadow: 0.3em 0.5em #FFE596;
-}
-blockquote * {
-  text-align: center;
-  font-family: kiddos;
-  letter-spacing: 0.2em;
-  font-size: 1.1em;
-}
-
 #articles {
   background: #CCDDEF;
   width: 80%;
@@ -112,20 +91,42 @@ blockquote * {
   flex-direction: column;
   justify-content: space-around;
 }
-#articles a {
-  padding: 1em 1em 1em 1em;
+#articles ul a {
+  padding: 0 1em 1em 1em;
   display: flex;
   align-items: center;
   font-size: large;
   color: #00569D;
 }
-#articles a:hover {
+#articles ul a:hover {
   opacity: 0.7;
 }
-#articles p {
+#articles ul p {
   display: inline-block;
   font-size: large;
   padding: 0 0 0 2em;
+}
+#articles blockquote {
+  background: #E67253;
+  position: absolute;
+  top: -6.5em;
+  right: -6.5em;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  display: flex;
+  padding: 1.5em 1.5em 1.5em 1.5em;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  font-weight: bold;
+  box-shadow: 0.3em 0.5em #FFE596;
+}
+#articles blockquote * {
+  text-align: center;
+  font-family: kiddos;
+  letter-spacing: 0.2em;
+  font-size: 1.1em;
 }
 
 .border-css {
@@ -141,7 +142,7 @@ blockquote * {
 
 #supports {
   background: white;
-  padding: 1em 0 2em 0;
+  padding: 0 0 2em 0;
   width: 80%;
   margin: auto;
 }
