@@ -1,0 +1,211 @@
+//variables
+
+$hover-opacity: 0.7;
+$orange: #E67253;
+
+/*meta*/
+
+@import './meta.scss';
+
+*{  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: kiddos;
+    src: url(../css/fonts/Kiddos-Demo.ttf);
+}
+
+/*main*/
+
+body{
+    background: rgb(244,168,183);
+    background: linear-gradient(90deg, rgba(244,168,183,1) 0%, rgba(244,168,183,1) 14.5%, rgba(0,86,157,1) 14.5%);
+}
+
+#banner{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #64C7F3;
+    color: white;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    *{
+        width: 70%;
+        font-family: kiddos;
+        letter-spacing: 0.2em;
+        font-size: xx-large;
+    }
+    iframe{
+        height: 19em;
+        margin: 0 0 1em 0;
+        border-style: none;
+    }
+}
+
+h1{
+    padding: 3em 0 2em 0;
+}
+
+h2{
+    padding: 1em 0 1em 0;
+}
+
+h3{
+    text-align: center;
+    padding: 2em 0 3em 0;
+    font-family: kiddos;
+    letter-spacing: 0.2em;
+    font-size: xx-large;
+}
+
+#transkids_logo{
+    width: 15%;
+    border-radius: 50%;
+}
+
+blockquote{
+    background: $orange;
+    float: right;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    display: flex;
+    margin: 0 5% 0 0;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    font-weight: bold;
+    box-shadow: 0.3em 0.5em #FFE596;
+    *{
+        text-align: center;
+        font-family: kiddos;
+        letter-spacing: 0.2em;
+        font-size: 1.1em;
+    }
+}
+
+#articles{
+    background: #CCDDEF;
+    width: 80%;
+    margin: auto;
+    ul{
+        width: 80%;
+        margin: auto;
+        padding: 0 0 2em 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    a{
+        padding: 1em 1em 1em 1em;
+        display: flex;
+        align-items: center;
+        font-size: large;
+        color: #00569D;
+    }
+    a:hover{
+        opacity: $hover-opacity;
+    }
+    p{
+        display: inline-block;
+        font-size: large;
+        padding: 0 0 0 2em;
+    }
+}
+
+.border-css{
+    height: 2px;
+    width: 50%;
+    margin: auto;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,0) 100%);
+}
+
+.transflag_article{
+    width: 8em;
+}
+
+#supports{
+    background: white;
+    padding: 1em 0 2em 0;
+    width: 80%;
+    margin: auto;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    img{
+        width: 15em;
+    }
+
+    img:hover{
+        opacity: $hover-opacity;
+    }
+}
+
+#contact{
+    background: #FAD6DD;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    li{
+        display: flex;
+        align-items: center;
+    }
+    li:hover{
+        opacity: $hover-opacity;
+    }
+    img{
+        width: 3em;
+        margin: 0 1em 0 0;
+    }
+    >a{
+        background: #FFE596; 
+        width: 8em;
+        text-align: center;
+        padding: 0.2em 0.2em 0.2em 0.2em;
+        font-family: kiddos;
+        letter-spacing: 0.2em;
+        font-size: xx-large;
+        box-shadow:  0.1em 0.15em #CCDDEE;
+        margin: 2em auto 2em auto;
+    }  
+    >a:hover{
+        box-shadow:  none;
+        transform: translate(0.1em, 0.15em)
+    }
+}
+
+footer{
+    background: $orange;
+    color: white;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 0.5em 0 0.5em 0;
+    *{
+        padding: 0.2em 0 0.2em 0;
+    }
+}
